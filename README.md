@@ -41,17 +41,8 @@ npm start
 
 ## Example
 Here's an example program to calculate the factorial of a number:
-```
-function factorial(n) {
-  if (n <= 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
+![image](https://github.com/abhinav2712/TimeComplexityCalculator/assets/68495520/7be84fa7-f534-414b-9b2e-4c63b6d9b273)
 
-console.log(factorial(5));
-```
 
 Entering this program in the app will estimate the time complexity as O(n).
 
