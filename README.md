@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Time Complexity Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Time Complexity Calculator is a web application built with React that estimates the time complexity of a program in Big O notation.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The Time Complexity Calculator allows you to input a program and analyzes its structure to estimate its time complexity. By counting the number of loop keywords (`for`, `while`, `do`), the app determines the maximum loop depth and provides an estimate of the time complexity as `O(n^maxLoopDepth)`.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Input a program and calculate its time complexity
+- Estimate time complexity based on loop depth
+- Display time complexity in Big O notation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+git clone <repository_url>
+```
 
-### `npm run build`
+2. Navigate to the project directory:
+ ```shell
+cd time-complexity-app
+```
+3. Install the dependencies:
+ ```shell
+npm install
+```
+## Usage
+1) Start the development server:
+```shell
+npm start
+```
+2 )Open your browser and visit http://localhost:3000 to access the Time Complexity Calculator.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3) Enter your program in the provided textarea.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4) Click the "Calculate Time Complexity" button to estimate the time complexity.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Example
+Here's an example program to calculate the factorial of a number:
+```
+function factorial(n) {
+  if (n <= 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
 
-### `npm run eject`
+console.log(factorial(5));
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Entering this program in the app will estimate the time complexity as O(n).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
